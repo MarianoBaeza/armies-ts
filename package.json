@@ -1,0 +1,27 @@
+{
+  "name": "armies-ts",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianoBaeza/armies-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarianoBaeza/armies-ts/issues"
+  },
+  "homepage": "https://github.com/MarianoBaeza/armies-ts#readme",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
