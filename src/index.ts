@@ -1,19 +1,45 @@
 import { Army } from "./domain/Army.js";
 import { Civilization } from "./domain/Civilization.js";
 
-// Example Armies:
+//Example Armies:
 const a = new Army("Chinese Army", Civilization.Chinese);
 const b = new Army("English Army", Civilization.English);
 const c = new Army("Byzantine Army", Civilization.Byzantine);
-// More than one Army by Civilization Example:
+//More than one Army by Civilization Example:
 const d = new Army("Chinese Second Army", Civilization.Chinese);
 const e = new Army("English Second Army", Civilization.English);
 
-// // Get Army total points:
+// //Get Army total points and gold:
 // console.log("Chinese Army points:", a.totalPoints, "gold:", a.gold);
 
-// //Get Army units:
-// console.log("Chinese units:", a.units);
+// //Get Army Initial Units:
+// console.log(
+//   "Chinese Army Initial units: \n",
+//   `Total Pikemen Units: ${
+//     a.units.filter((x) => x.type === "Pikeman").length
+//   } \n`,
+//   `Total Archer Units: ${a.units.filter((x) => x.type === "Archer").length} \n`,
+//   `Total Knight Units: ${a.units.filter((x) => x.type === "Knight").length} \n`
+// );
+// console.log(
+//   "English Army Initial units: \n",
+//   `Total Pikemen Units: ${
+//     b.units.filter((x) => x.type === "Pikeman").length
+//   } \n`,
+//   `Total Archer Units: ${b.units.filter((x) => x.type === "Archer").length} \n`,
+//   `Total Knight Units: ${b.units.filter((x) => x.type === "Knight").length} \n`
+// );
+// console.log(
+//   "Byzantine Army Initial units: \n",
+//   `Total Pikemen Units: ${
+//     c.units.filter((x) => x.type === "Pikeman").length
+//   } \n`,
+//   `Total Archer Units: ${c.units.filter((x) => x.type === "Archer").length} \n`,
+//   `Total Knight Units: ${c.units.filter((x) => x.type === "Knight").length} \n`
+// );
+
+// //Get Army Units:
+// console.log("Chinese Army Units:", a.units);
 
 // //Get Army single unit:
 // console.log("Chinese First Unit:", a.units[0]);
