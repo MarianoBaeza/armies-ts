@@ -26,6 +26,7 @@ const chineseFirstUnitId = a.units[0].id;
 // //Train Unit Example:
 // a.train(chineseFirstUnitId);
 // console.log("Chinese First Unit Trained:", a.units[0]);
+// console.log("Chinese Army gold:", "gold:", a.gold);
 
 // //Transform Unit Example:
 // a.transform(chineseFirstUnitId);
@@ -33,6 +34,7 @@ const chineseFirstUnitId = a.units[0].id;
 //   "Chinese First Unit Transformed:",
 //   a.units[a.units.findIndex((x) => x.id === chineseFirstUnitId)]
 // );
+// console.log("Chinese Army gold:", "gold:", a.gold);
 
 // //Battle Win Example:
 // console.log("Byzantine Army gold before battle:", c.gold);
