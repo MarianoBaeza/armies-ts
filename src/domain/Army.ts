@@ -11,7 +11,7 @@ import {
 export type BattleOutcome = "WIN" | "LOSE" | "DRAW";
 
 export interface BattleRecord {
-  at: Date;
+  at: String;
   opponent: string;
   result: BattleOutcome;
   ourPoints: number;
@@ -80,7 +80,10 @@ export class Army {
     this._units.splice(idx, 1, next);
   }
 
-  battle(opponent: Army, at: Date = new Date()): BattleOutcome {
+  battle(
+    opponent: Army,
+    at: String = new Date().toLocaleString()
+  ): BattleOutcome {
     const ourPts = this.totalPoints;
     const theirPts = opponent.totalPoints;
 
